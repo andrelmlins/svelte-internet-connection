@@ -1,0 +1,17 @@
+{
+  "name": "svelte-internet-connection",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "build": "svelte-scripts-library build",
+    "start": "svelte-scripts-library start",
+    "test": "svelte-scripts-library test"
+  },
+  "devDependencies": {
+    "svelte": "^3.0.0"
+  },
+  "dependencies": {
+    "svelte-scripts": "^0.3.7"
+  }
+}
