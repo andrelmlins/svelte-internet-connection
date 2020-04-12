@@ -1,7 +1,5 @@
 <script>
-  import SvelteLibrary from '../lib/index.svelte';
-
-  export let name;
+  import InternetConnection from "../lib/InternetConnection.svelte";
 </script>
 
 <style>
@@ -27,13 +25,7 @@
 </style>
 
 <main>
-  <h1>Hello {name}!</h1>
-  <p>
-    Visit the
-    <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
-    to learn how to build Svelte apps.
-  </p>
-  <h2>My Library</h2>
+  <h1>Svelte Internet Connection</h1>
   <br />
-  <SvelteLibrary />
+  <InternetConnection />
 </main>

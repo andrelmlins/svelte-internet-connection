@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
+  "svelte": "src/lib/InternetConnection.svelte",
+  "files": [
+    "src/lib/InternetConnection.svelte",
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "svelte-scripts-library build",
     "start": "svelte-scripts-library start",
