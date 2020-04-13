@@ -24,6 +24,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    transition: 1s all;
   }
 
   h1 {
