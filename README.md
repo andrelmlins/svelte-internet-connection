@@ -38,6 +38,12 @@ An example of how to use the library:
 </InternetConnection>
 ```
 
+## Events
+
+| Prop   | Type | Description                 |
+| ------ | ---- | --------------------------- |
+| change | func | Call with change connection |
+
 ## Slot Properties
 
 | Prop    | Type   | Description                     |

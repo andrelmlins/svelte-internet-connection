@@ -1,7 +1,14 @@
 <script>
-  import { onMount, onDestroy } from "svelte";
+  import { onMount, onDestroy, createEventDispatcher } from "svelte";
 
+  const dispatch = createEventDispatcher();
   let online;
+
+  $: dispatch("change", {
+    status: online ? "online" : "offline",
+    online,
+    offline: !online
+  });
 
   onMount(() => {
     online = navigator.onLine;
