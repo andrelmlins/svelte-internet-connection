@@ -1,9 +1,14 @@
 {
   "name": "svelte-internet-connection",
   "version": "1.0.0",
+  "description": "Internet connection detector to Svelte",
+  "repository": "https://github.com/andrelmlins/svelte-internet-connection",
+  "author": "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",
+  "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "svelte": "src/lib/InternetConnection.svelte",
+  "homepage": "https://svelte-infinite-connection.netlify.com/",
   "files": [
     "src/lib/InternetConnection.svelte",
     "dist",
@@ -14,6 +19,17 @@
     "start": "svelte-scripts-library start",
     "test": "svelte-scripts-library test"
   },
+  "bugs": {
+    "url": "https://github.com/andrelmlins/svelte-internet-connection/issues"
+  },
+  "keywords": [
+    "svelte",
+    "internet",
+    "connection",
+    "detector",
+    "online",
+    "offline"
+  ],
   "devDependencies": {
     "svelte": "^3.0.0"
   },
