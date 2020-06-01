@@ -21,7 +21,7 @@ Local demo:
 ```
 git clone https://github.com/andrelmlins/svelte-internet-connection.git
 cd svelte-internet-connection
-npm && npm run dev
+npm install && npm run dev
 ```
 
 ## Examples
