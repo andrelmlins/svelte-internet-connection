@@ -47,7 +47,7 @@
     "rollup-plugin-terser": "^7.0.0",
     "sirv-cli": "^1.0.0",
     "svelte": "^3.24.0",
-    "svelte-jester": "^1.1.4"
+    "svelte-jester": "^1.1.5"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -56,13 +56,7 @@
     "transform": {
       "^.+\\.js$": "babel-jest",
       "^.+\\.svelte$": [
-        "svelte-jester",
-        {
-          "preprocess": false,
-          "debug": false,
-          "compilerOptions": {},
-          "rootMode": ""
-        }
+        "svelte-jester"
       ]
     },
     "moduleFileExtensions": [
