@@ -1,11 +1,11 @@
 <script>
-  import { onMount, onDestroy, createEventDispatcher } from "svelte";
+  import { onMount, onDestroy, createEventDispatcher } from 'svelte';
 
   const dispatch = createEventDispatcher();
   let online;
 
-  $: dispatch("change", {
-    status: online ? "online" : "offline",
+  $: dispatch('change', {
+    status: online ? 'online' : 'offline',
     online,
     offline: !online
   });
@@ -13,13 +13,15 @@
   onMount(() => {
     online = navigator.onLine;
 
-    window.addEventListener("online", e => (online = true), false);
-    window.addEventListener("offline", e => (online = false), false);
+    window.addEventListener('online', e => (online = true), false);
+    window.addEventListener('offline', e => (online = false), false);
   });
 
   onDestroy(() => {
-    window.removeEventListener("online", null);
-    window.removeEventListener("offline", null);
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('online', null);
+      window.removeEventListener('offline', null);
+    }
   });
 </script>
 
